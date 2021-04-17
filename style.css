@@ -1,0 +1,143 @@
+html{
+  scroll-behavior: smooth;
+}
+
+div #home {
+  width:100%;
+  background-image: url("images/trees-4741364_1920\ \(1\).png");
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  z-index: 1;
+}
+
+.body1 {
+  background-image: linear-gradient(45deg,#ab78fc, #bf98ff, #d65db1, #FF61D2, #ff8255, #ff875c, #ffc75f, #ffff62);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  height:100%;
+  animation: bg-ani 300s ease infinite alternate;
+  z-index: 0;
+  background-attachment: fixed;
+ 
+}
+
+#home {
+  border-radius: 5px;
+  height:1000px;
+  position: relative;
+  top: 200px;  
+  background-color:rgb(255, 255, 255);
+  z-index:10;
+  width:100%;
+  font: size 36px;
+
+}  
+.b1 {
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+  
+}
+a:link, a:visited {
+  color: white;
+  border-radius: 4px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 14px 10px;
+  position: relative;
+  top: 250px;
+  left: 689px;
+  text-decoration: none;
+  display: inline-block; 
+  animation: move .5s ease 1.3s;
+  animation-fill-mode: forwards;
+  
+  
+  
+  
+  
+}
+
+a:hover {
+  background-color: rgb(144, 144, 144, 0.2);
+}
+
+.start {
+  position: fixed;
+}
+
+
+
+@keyframes bg-ani {
+    0% {background-position: left;}
+    100% {background-position: right;}
+
+}
+@keyframes move {
+  0% {}
+  100% {transform: translateY(-300px)}
+}
+
+
+.logo {
+  display: block;
+  margin-top: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  opacity: 0;
+  animation-name: fade-in-twist;
+  animation-duration: .7s;
+  animation-delay: .2;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes fade-in-twist {
+  0% {opacity:0}
+  100% {opacity:1;}
+  0% {transform: rotate(-7deg)}
+  100% {transform: rotate(0deg)}
+}
+
+@keyframes fade-in {
+  0% {opacity:0}
+  100% {opacity:1;}
+}
+/*#845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871*/
+
+.welcome {
+  opacity: 0;
+  position: relative;
+  color: white;
+  font-family: Arial;
+  font-size: 75px;
+  text-align: center;
+  bottom: 20px;
+  animation: fade-in 1.3s ease .6s;
+  animation-fill-mode: forwards;
+ 
+}
+  
+.fav {
+  size: 100px;
+}
+.port {
+  font-family: Arial;
+  opacity: 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+  animation: fade-in 1.3s ease 1s;
+  animation-fill-mode: forwards;
+}
+.b1 {
+    border: 0;
+    cursor: pointer;
+
+}
+
+
